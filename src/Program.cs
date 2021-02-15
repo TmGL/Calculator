@@ -37,9 +37,9 @@ namespace Calculator
         case "plus":
         case "total":
           Console.WriteLine("Please type your first number.");
-          addStart:
 
-          bool isNumber = int.TryParse(Console.ReadLine(), out int aNum1);
+          addStart:
+          bool isNumber = decimal.TryParse(Console.ReadLine(), out decimal aNum1);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto addStart;
@@ -48,8 +48,7 @@ namespace Calculator
           Console.WriteLine("Please type your second number.");
 
           addStart2:
-
-          isNumber = int.TryParse(Console.ReadLine(), out int aNum2);
+          isNumber = decimal.TryParse(Console.ReadLine(), out decimal aNum2);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto addStart2;
@@ -64,19 +63,19 @@ namespace Calculator
         case "take away":
         case "difference":
           Console.WriteLine("Please type your first number.");
-          subStart:
 
-          isNumber = int.TryParse(Console.ReadLine(), out int sNum1);
+          subStart:
+          isNumber = decimal.TryParse(Console.ReadLine(), out decimal sNum1);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto subStart;
           }
 
           Console.WriteLine("Please type your second number.");
-          
+      
           subStart2:
 
-          isNumber = int.TryParse(Console.ReadLine(), out int sNum2);
+          isNumber = decimal.TryParse(Console.ReadLine(), out decimal sNum2);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto subStart2;
@@ -91,9 +90,9 @@ namespace Calculator
         case "multiply":
         case "mul":
           Console.WriteLine("Please type your first number.");
-          mulStart:
 
-          isNumber = int.TryParse(Console.ReadLine(), out int mNum1);
+          mulStart:
+          isNumber = decimal.TryParse(Console.ReadLine(), out decimal mNum1);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto mulStart;
@@ -102,8 +101,7 @@ namespace Calculator
           Console.WriteLine("Please type your second number.");
 
           mulStart2:
-
-          isNumber = int.TryParse(Console.ReadLine(), out int mNum2);
+          isNumber = decimal.TryParse(Console.ReadLine(), out decimal mNum2);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto mulStart2;
@@ -117,9 +115,9 @@ namespace Calculator
         case "share":
         case "group":
           Console.WriteLine("Please type your first number.");
+          
           divStart:
-
-          isNumber = int.TryParse(Console.ReadLine(), out int dNum1);
+          isNumber = decimal.TryParse(Console.ReadLine(), out decimal dNum1);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto divStart;
@@ -129,7 +127,7 @@ namespace Calculator
 
           divStart2:
 
-          isNumber = int.TryParse(Console.ReadLine(), out int dNum2);
+          isNumber = decimal.TryParse(Console.ReadLine(), out decimal dNum2);
           if (!isNumber) {
             Console.WriteLine("Please provide a valid number!");
             goto divStart2;

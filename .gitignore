@@ -1,4 +1,5 @@
-# Running in vscode
+# Running in console
 Calculator.csproj
 obj
 bin
+.vscode
