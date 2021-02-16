@@ -7,7 +7,6 @@ Currently, the features are:
 - multiply
 - subtract
 
-Features that will be added soon:
 - round
 - multiples
 
