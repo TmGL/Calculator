@@ -169,6 +169,7 @@ namespace Calculator
 
                 case "multiples":
                 case "m":
+                case "muls":
                 case "multiple":
                     Console.WriteLine("Please enter a number.");
 
