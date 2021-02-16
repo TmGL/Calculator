@@ -6,10 +6,7 @@ namespace Calculator
   {
     public static void Main(string[] args) 
     {
-      Adding addClass = new Adding();
-      Subtracting subClass = new Subtracting();
-      Multiplying mulClass = new Multiplying();
-      Dividing divClass = new Dividing();
+      Maths math = new Maths();
 
       Console.WriteLine("Hello, I am a calculator! What would you like to do? (Tip: Type 'options' to see all available options).");
       goto choosing;
@@ -54,7 +51,7 @@ namespace Calculator
             goto addStart2;
           }
 
-          Console.WriteLine(aNum1 + " + " + aNum2 + " = " + addClass.addNums(aNum1, aNum2));
+          Console.WriteLine(aNum1 + " + " + aNum2 + " = " + math.addNums(aNum1, aNum2));
           goto start2;
 
         case "subtract":
@@ -81,7 +78,7 @@ namespace Calculator
             goto subStart2;
           }
 
-          Console.WriteLine(sNum1 + " - " + sNum2 + " = " + subClass.subNums(sNum1, sNum2));
+          Console.WriteLine(sNum1 + " - " + sNum2 + " = " + math.subNums(sNum1, sNum2));
           goto start2;
 
         case "times":
@@ -107,7 +104,7 @@ namespace Calculator
             goto mulStart2;
           }
 
-          Console.WriteLine(mNum1 + " x " + mNum2 + " = " + mulClass.mulNums(mNum1, mNum2));
+          Console.WriteLine(mNum1 + " x " + mNum2 + " = " + math.mulNums(mNum1, mNum2));
           goto start2;
 
         case "divide":
@@ -133,7 +130,7 @@ namespace Calculator
             goto divStart2;
           }
 
-          Console.WriteLine(dNum1 + " ÷ " + dNum2 + " = " + divClass.divNums(dNum1, dNum2));
+          Console.WriteLine(dNum1 + " ÷ " + dNum2 + " = " + math.divNums(dNum1, dNum2));
           goto start2;
 
 
