@@ -2,4 +2,6 @@
 Calculator.csproj
 obj
 bin
+
+# Visual Stupid Code
 .vscode
