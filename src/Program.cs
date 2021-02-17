@@ -173,7 +173,7 @@ namespace Calculator
                 case "multiple":
                     Console.WriteLine("Please enter a number.");
 
-                    multiplesStart:
+                multiplesStart:
                     isNumber = decimal.TryParse(Console.ReadLine(), out decimal num);
                     if (!isNumber)
                     {
@@ -183,7 +183,7 @@ namespace Calculator
 
                     Console.WriteLine("How many multiples do you want? (Max: 100)");
 
-                    mutlipleStart2:
+                mutlipleStart2:
                     isNumber = decimal.TryParse(Console.ReadLine(), out decimal limit);
                     if (!isNumber)
                     {
@@ -191,17 +191,17 @@ namespace Calculator
                         goto mutlipleStart2;
                     }
 
-                    if (limit > 100) 
+                    if (limit > 100)
                     {
-                      Console.WriteLine("The max limit is 100!");
-                      goto mutlipleStart2;
+                        Console.WriteLine("The max limit is 100!");
+                        goto mutlipleStart2;
                     }
 
                     int i = 0;
-                    while(i <= limit) 
+                    while (i <= limit)
                     {
-                      Console.WriteLine(num + " x " + i + " = " + num * i);
-                      i++;
+                        Console.WriteLine(num + " x " + i + " = " + num * i);
+                        i++;
                     }
 
                     goto start2;
